@@ -64,7 +64,7 @@
   },
   "homepage": "https://github.com/aevumdb/aevum-node#readme",
   "devDependencies": {
-    "@eslint/js": "^9.0.0",
+    "@eslint/js": "^10.0.1",
     "@types/jest": "^29.5.0",
     "@types/node": "^25.4.0",
     "eslint": "^9.14.0",
