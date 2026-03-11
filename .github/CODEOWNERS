@@ -1,0 +1,13 @@
+# GitHub Code Owners
+# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Global owners
+* @aevumdb-team
+
+# Component specific owners
+/src/connection/ @aevumdb-team
+/src/operations/ @aevumdb-team
+/src/admin/ @aevumdb-team
+/docs/ @aevumdb-team
+/.github/workflows/ @aevumdb-team
+/examples/ @aevumdb-team

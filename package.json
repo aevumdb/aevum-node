@@ -1,0 +1,84 @@
+{
+  "name": "@aevumdb/node-driver",
+  "version": "1.0.0",
+  "description": "Official high-performance Node.js driver for AevumDB NoSQL database. 100% API coverage, TypeScript-native, and optimized for high-concurrency environments.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./errors": {
+      "types": "./dist/errors/aevum-error.d.ts",
+      "import": "./dist/errors/aevum-error.mjs",
+      "require": "./dist/errors/aevum-error.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.mjs",
+      "require": "./dist/types/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/errors/aevum-error.ts src/types/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint . --fix",
+    "lint:check": "eslint .",
+    "format": "prettier --write 'src/**/*.ts' 'examples/**/*.ts' 'tests/**/*.ts'",
+    "format:check": "prettier --check 'src/**/*.ts' 'examples/**/*.ts' 'tests/**/*.ts'",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build && pnpm run lint:check && pnpm run format:check && pnpm run test"
+  },
+  "keywords": [
+    "aevumdb",
+    "nosql",
+    "database",
+    "driver",
+    "nodejs",
+    "typescript",
+    "performance",
+    "connection-pooling",
+    "async-await",
+    "rbac",
+    "schema-validation"
+  ],
+  "author": "AevumDB Team",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aevumdb/aevum-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aevumdb/aevum-node/issues"
+  },
+  "homepage": "https://github.com/aevumdb/aevum-node#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "eslint": "^9.14.0",
+    "globals": "^15.9.0",
+    "jest": "^29.5.0",
+    "prettier": "^3.2.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "typescript-eslint": "^8.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "pnpm@9.0.0"
+}

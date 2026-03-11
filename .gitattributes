@@ -1,0 +1,73 @@
+# Configuration for Git Attributes, specifying file handling.
+# For more details on available options, refer to: https://git-scm.com
+
+# Auto detect text files and normalize line endings to LF
+* text=auto
+
+# Source code files - always use LF
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.jsx text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+
+# Windows specific files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.otf binary
+*.db binary
+*.sqlite binary
+
+# Documentation
+*.md text eol=lf diff=markdown
+LICENSE text eol=lf
+README.md text eol=lf diff=markdown
+CHANGELOG.md text eol=lf diff=markdown
+CONTRIBUTING.md text eol=lf diff=markdown
+SECURITY.md text eol=lf diff=markdown
+AUTHORS.md text eol=lf
+CONTRIBUTORS.md text eol=lf
+CODE_OF_CONDUCT.md text eol=lf
+SUPPORT.md text eol=lf
+
+# Configuration files
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+.eslintrc* text eol=lf
+.prettierrc* text eol=lf
+tsconfig.json text eol=lf
+jest.config.js text eol=lf
+package.json text eol=lf
+pnpm-lock.yaml text eol=lf working-tree-encoding=UTF-8
+
+# Build and dist files
+dist/** export-ignore
+node_modules/** export-ignore
+coverage/** export-ignore
+.nyc_output/** export-ignore
+
+# Test fixtures
+tests/fixtures/** text eol=lf

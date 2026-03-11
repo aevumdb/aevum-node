@@ -1,0 +1,80 @@
+# Configuration for Git Ignore, excluding specific paths.
+# For more details on available options, refer to: https://git-scm.com
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+.pnpm-debug.log*
+
+# Build outputs
+dist/
+/build/
+*.tsbuildinfo
+.turbo/
+
+# Compiled files
+*.js
+!jest.config.js
+*.js.map
+*.d.ts
+!*.d.ts.map
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.production.local
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.sublime-workspace
+*.sublime-project
+.vim/
+
+# Testing
+coverage/
+.jest/
+.nyc_output/
+*.lcov
+junit.xml
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Temporary files
+tmp/
+temp/
+.cache/
+*.tmp
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Misc
+.tern-port
+.versionrc.json
+release/

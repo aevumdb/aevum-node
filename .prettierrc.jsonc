@@ -1,0 +1,20 @@
+// This is the configuration file for Prettier, a code formatter.
+// It specifies rules for how code should be formatted to ensure consistency.
+// For more details on available options, refer to: https://prettier.io/docs/en/options.html
+
+{
+  // Print semicolons at the ends of statements.
+  "semi": true,
+  // Use single quotes instead of double quotes.
+  "singleQuote": true,
+  // Print trailing commas wherever possible in ES5 (objects, arrays, etc.).
+  "trailingComma": "es5",
+  // Specify the line length that Prettier will wrap on.
+  "printWidth": 100,
+  // Specify the number of spaces per indentation-level.
+  "tabWidth": 2,
+  // Indent lines with tabs instead of spaces.
+  "useTabs": false,
+  // Include parentheses around a sole arrow function parameter.
+  "arrowParens": "always"
+}

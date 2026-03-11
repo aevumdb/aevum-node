@@ -1,0 +1,9 @@
+# Config for issue templates
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/aevumdb/aevum-node/tree/main/docs
+    about: Read project documentation
+  - name: Discussions
+    url: https://github.com/aevumdb/aevum-node/discussions
+    about: Ask questions or share ideas

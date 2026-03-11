@@ -1,0 +1,62 @@
+# Configuration for EditorConfig, enforcing a consistent coding style.
+# For more details on available options, refer to: https://editorconfig.org
+
+# Top-most EditorConfig file
+root = true
+
+# Default settings for all files
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# TypeScript/JavaScript files
+[*.{ts,tsx,js,jsx,mjs,cjs}]
+indent_size = 2
+max_line_length = 100
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+
+# Markdown files
+[*.md]
+trim_trailing_whitespace = false
+max_line_length = 120
+
+# Shell scripts
+[*.sh]
+indent_size = 2
+end_of_line = lf
+
+# Makefile (tabs required)
+[Makefile]
+indent_style = tab
+
+# Lock files
+[pnpm-lock.yaml]
+indent_style = space
+indent_size = 2
+
+# Config files
+[.editorconfig]
+indent_size = 2
+
+[tsconfig.json]
+indent_size = 2
+
+[jest.config.js]
+indent_size = 2
+
+[.prettierrc]
+indent_size = 2
+
+[.eslintrc*]
+indent_size = 2

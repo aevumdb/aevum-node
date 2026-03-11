@@ -1,0 +1,43 @@
+// This is the main configuration file for the TypeScript compiler.
+// It specifies the root files and the compiler options required to compile the project.
+{
+// Compiler Options
+  "compilerOptions": {
+    // Specify what JavaScript language version to output. 'ES2020' is recommended for modern environments.
+    "target": "ES2020",
+    // Specify the module system for the program. 'ES2020' for ES Modules.
+    "module": "ES2020",
+    // Specify a list of built-in library declarations to be included in the compilation.
+    "lib": ["ES2020"],
+    // Generate .d.ts files for every TypeScript or JavaScript file inside your project.
+    "declaration": true,
+    // Generate source maps for declaration files.
+    "declarationMap": true,
+    // Redirect output structure to the directory.
+    "outDir": "./dist",
+    // Specify the root directory of input files. Use to control the output directory structure with --outDir.
+    "rootDir": "./src",
+    // Enable all strict type-checking options.
+    "strict": true,
+    // Enable interoperability between CommonJS and ES Modules.
+    "esModuleInterop": true,
+    // Skip type checking of all declaration files (*.d.ts).
+    "skipLibCheck": true,
+    // Ensure that casing is consistent in file paths.
+    "forceConsistentCasingInFileNames": true,
+    // Enable importing .json files with an import statement.
+    "resolveJsonModule": true,
+    // Specify how modules are resolved. 'node' for Node.js environments.
+    "moduleResolution": "node",
+    // Allow default imports from modules with no default export. This does not affect code emit, just typechecking.
+    "allowSyntheticDefaultImports": true,
+    // Do not emit comments to the JavaScript output.
+    "removeComments": false,
+    // Emit corresponding .map files.
+    "sourceMap": true
+  },
+  // Files to include in the compilation.
+  "include": ["src/**/*"],
+  // Files to exclude from the compilation.
+  "exclude": ["node_modules", "dist", "tests", "examples"]
+}

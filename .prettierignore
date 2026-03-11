@@ -1,0 +1,49 @@
+# Configuration for Prettier Ignore, excluding specific paths from formatting.
+# For more details, refer to: https://prettier.io/docs/en/ignore.html
+
+# Dependencies
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Generated files
+*.min.js
+*.min.css
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test files (often auto-generated)
+.jest/
+.turbo/
+
+# Git
+.git/
+.gitignore
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Misc
+tmp/
+temp/
+release/
